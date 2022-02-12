@@ -5,3 +5,4 @@
 
  ## Used Tools:
   - ReactJs
+  - react-confetti

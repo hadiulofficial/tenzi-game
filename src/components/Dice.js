@@ -1,9 +1,12 @@
 import React from 'react';
 
-const Dice = (props) => {
+const Dice = ({holdDice, isHeld, value}) => {
+    const styles = {
+        backgroundColor: isHeld ? '#59E391' : 'white',
+    }
     return (
-        <div className="dice-box">
-            <h2 className="dice-num">{props.value}</h2>
+        <div className="dice-box" onClick={holdDice} style={styles}>
+            <h2 className="dice-num">{value}</h2>
         </div>
     );
 };
